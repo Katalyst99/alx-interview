@@ -16,7 +16,7 @@ def minOperations(n):
     while n > 1:
         if n % div == 0:
             n = n / div
-            numOps = numOps + div
+            numOps += div
         else:
             div += 1
     return numOps

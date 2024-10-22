@@ -18,7 +18,7 @@ def parse_logstats():
 
     print('File size: {}'.format(sizeSum))
     for code, val in sorted(sCodes.items()):
-        if val > 0:
+        if val:
             print(f'{code}: {val}')
 
 
@@ -39,3 +39,5 @@ try:
 except KeyboardInterrupt:
     parse_logstats()
     raise
+
+parse_logstats()

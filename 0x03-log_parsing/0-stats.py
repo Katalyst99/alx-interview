@@ -39,5 +39,3 @@ try:
 except KeyboardInterrupt:
     parse_logstats()
     raise
-
-parse_logstats()

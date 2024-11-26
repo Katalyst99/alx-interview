@@ -11,7 +11,8 @@ def makeChange(coins, total):
     for c in coins:
         if total == 0:
             break
-        change += total // c
+        keep = total // c
+        change += keep
         total %= c
 
     return change if total == 0 else -1
